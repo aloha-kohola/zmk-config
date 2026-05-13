@@ -46,20 +46,6 @@
         };
 
         lower_layer {
-            display-name = "NUMBER";
-
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5    |  6  |  7  |  8  |  9  |  0  | BSPC |
-            // | CTRL | BT1 | BT2 | BT3 | BT4 | BT5   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT | BTCR| RGB | RST | BOOT| Unlock|     |     |     |     |     |      |
-            //                    | GUI |     | SPC   | ENT |     | ALT |
-
-            bindings = <
-&trans  &kp N0  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans  &none  &kp N4  &kp N5  &kp N6  &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp PAGE_UP  &kp INSERT  &trans  &none  &kp N7  &kp N8  &kp N9  &kp N0  &kp K_MENU  &kp PRINTSCREEN  &kp HOME  &kp END  &kp PAGE_DOWN  &kp RIGHT_ALT  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        raise_layer {
             display-name = "SYMBOL";
 
             // -----------------------------------------------------------------------------------------
@@ -70,6 +56,20 @@
 
             bindings = <
 &trans  &none  &kp LS(SLASH)  &kp RA(N8)  &kp RA(N9)  &kp GRAVE  &kp LS(N1)  &kp BACKSLASH  &kp LS(BACKSLASH)  &kp LS(N0)  &kp LS(N6)  &kp RA(E)  &trans  &kp RA(MINUS)  &kp LS(N7)  &kp RA(N7)  &kp RA(N0)  &kp LS(RIGHT_BRACKET)  &kp LS(MINUS)  &kp LS(N8)  &kp LS(N9)  &kp SLASH  &kp LS(PERIOD)  &kp RA(Q)  &trans  &kp POUND  &kp LS(N4)  &kp RA(BACKSLASH)  &kp RA(RIGHT_BRACKET)  &kp LS(EQUAL)  &kp RIGHT_BRACKET  &kp LS(N5)  &kp LS(NUMBER_2)  &kp LS(POUND)  &kp LS(COMMA)  &none  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        raise_layer {
+            display-name = "NUMBER";
+
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  1  |  2  |  3  |  4  |  5    |  6  |  7  |  8  |  9  |  0  | BSPC |
+            // | CTRL | BT1 | BT2 | BT3 | BT4 | BT5   | LFT | DWN |  UP | RGT |     |      |
+            // | SHFT | BTCR| RGB | RST | BOOT| Unlock|     |     |     |     |     |      |
+            //                    | GUI |     | SPC   | ENT |     | ALT |
+
+            bindings = <
+&trans  &kp N0  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans  &none  &kp N4  &kp N5  &kp N6  &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp PAGE_UP  &kp INSERT  &trans  &none  &kp N7  &kp N8  &kp N9  &kp N0  &kp K_MENU  &kp PRINTSCREEN  &kp HOME  &kp END  &kp PAGE_DOWN  &kp RIGHT_ALT  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -120,8 +120,8 @@
         compatible = "zmk,conditional-layers";
 
         SettingsLayerCondition {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <4 1>;
+            then-layer = <4>;
         };
     };
 };

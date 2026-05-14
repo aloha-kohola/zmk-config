@@ -44,6 +44,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        ScharfesS {
+            bindings = <&kp MINUS>;
+            key-positions = <11 23>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 

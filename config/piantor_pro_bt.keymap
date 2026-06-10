@@ -21,7 +21,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
@@ -35,7 +35,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
@@ -94,7 +94,7 @@
             //                    | GUI |     | SPC   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N0  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans  &none  &kp N4  &kp N5  &kp N6  &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp PAGE_UP  &kp INSERT  &trans  &none  &kp N7  &kp N8  &kp N9  &kp N0  &kp K_MENU  &kp PRINTSCREEN  &kp HOME  &kp END  &kp PAGE_DOWN  &kp RIGHT_ALT  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N0  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans  &none  &kp N4  &kp N5  &kp N6  &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp PAGE_UP  &kp INSERT  &trans  &none  &kp N7  &kp N8  &kp N9  &kp N0  &kp K_MENU  &kp PRINTSCREEN  &kp HOME  &kp END  &kp PAGE_DOWN  &kp RIGHT_ALT  &trans  &trans  &trans  &trans  &trans  &kp DELETE
             >;
         };
 
